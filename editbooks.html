@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="manage_books.html">Add Books</a></li>
+            <li><a href="view_book.html">View Books</a></li>
+            <li><a href="editbooks.html">Edit Books</a></li>
+        </ul>
+    </nav>
+
+<section>
+    <h2>Edit a Book</h2>
+    <form id="editBookForm">
+    <label for="selectBook">Select Book to Edit:</label>
+    <select id="selectBook" name="selectBook" required>
+        <option value="">-- Select a Book --</option>
+        </select>
+
+    <label for="title">New Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="author">New Author:</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="genre">New Genre:</label>
+    <input type="text" id="genre" name="genre" required>
+
+    <label for="publicationDate">New Publication Date:</label>
+    <input type="date" id="publicationDate" name="publicationDate" required>
+
+    <button type="submit">Update Book</button>
+    </form>
+</section>
+
+<script src="functions.js"></script>
+</body>
+</html>
